@@ -1,6 +1,6 @@
 <header>
   <!--Navbar-->
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color blue-gradient">
+  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color blue-gradient fixed-top">
     <!-- Navbar brand -->
     <mdb-navbar-brand><a class="navbar-brand"
          href="#">Víctor Martínez</a></mdb-navbar-brand>
@@ -85,53 +85,99 @@
 </header>
 
 <main>
-  <div class="container">
+  <div class="container-fluid">
     <!-- Timeline -->
-
-    <div class="row mt-5">
-      <div class="col">
-        <h2><strong>Experience</strong></h2>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <h2><strong>Experience</strong></h2>
+        </div>
       </div>
-    </div>
-    <div class="row mt-3">
-      <div class="col">
-        <div class="timeline-main">
-          <!-- Timeline Wrapper -->
-          <ul class="stepper stepper-vertical timeline mx-0">
-            <li>
-              <!--Section Title -->
-              <a href="#!">
-                <span class="circle z-depth-1-half">
-                  <img src="assets/if.png"
-                       class="rounded-circle img-fluid profile">
-                </span>
-              </a>
-              <!-- Section Description -->
-              <div class="step-content z-depth-1 ml-xl-0 p-0 my-2">
-                <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">Interfactura - Sr. Fullstack
-                  Developer</h4>
-                <p class="text-muted mt-4 px-4">
-                  <mdb-icon far
-                            icon="calendar"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  June 2018 - Today
-                </p>
-                <p class="mx-4 mb-2">
-                  <mdb-icon fas
-                            icon="check"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  Frontend tech lead
+      <div class="row mt-3">
+        <div class="col">
+          <div class="timeline-main">
+            <!-- Timeline Wrapper -->
+            <ul class="stepper stepper-vertical timeline mx-0">
+              <li>
+                <!--Section Title -->
+                <a href="#!">
+                  <span class="circle z-depth-1-half">
+                    <img src="assets/if.png"
+                         class="rounded-circle img-fluid profile">
+                  </span>
+                </a>
+                <!-- Section Description -->
+                <div class="step-content z-depth-1 ml-xl-0 p-0 my-2">
+                  <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">Interfactura - Sr. Fullstack
+                    Developer</h4>
+                  <p class="text-muted mt-4 px-4">
+                    <mdb-icon far
+                              icon="calendar"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    June 2018 - Today
+                  </p>
                   <p class="mx-4 mb-2">
                     <mdb-icon fas
                               icon="check"
                               aria-hidden="true"
                               class="mr-1">
                     </mdb-icon>
-                    Created multiple Angular libraries for the company
+                    Frontend tech lead
+                    <p class="mx-4 mb-2">
+                      <mdb-icon fas
+                                icon="check"
+                                aria-hidden="true"
+                                class="mr-1">
+                      </mdb-icon>
+                      Created multiple Angular libraries for the company
+                    </p>
+                    <p class="mx-4 mb-4">
+                      <mdb-icon fas
+                                icon="check"
+                                aria-hidden="true"
+                                class="mr-1">
+                      </mdb-icon>
+                      Gave Angular training to employees
+                    </p>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <!--Section Title -->
+                <a href="#!">
+                  <span class="circle z-depth-1-half">
+                    <img src="assets/accenture.png"
+                         class="rounded-circle img-fluid profile">
+                  </span>
+                </a>
+                <!-- Section Description -->
+                <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
+                  <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">
+                    Accenture - Frontend Developer</h4>
+                  <p class="text-muted mt-4 px-4">
+                    <mdb-icon far
+                              icon="calendar"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    February 2017 - June 2018
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="check"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    Two finished projects in Angular 5.x
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="check"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    Gave unit testing training to employees
                   </p>
                   <p class="mx-4 mb-4">
                     <mdb-icon fas
@@ -139,192 +185,307 @@
                               aria-hidden="true"
                               class="mr-1">
                     </mdb-icon>
-                    Gave Angular training to employees
+                    Functional tester for six months
                   </p>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <!--Section Title -->
-              <a href="#!">
-                <span class="circle z-depth-1-half">
-                  <img src="assets/accenture.png"
-                       class="rounded-circle img-fluid profile">
-                </span>
-              </a>
-              <!-- Section Description -->
-              <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
-                <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">
-                  Accenture - Frontend Developer</h4>
-                <p class="text-muted mt-4 px-4">
-                  <mdb-icon far
-                            icon="calendar"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  February 2017 - June 2018
-                </p>
-                <p class="mx-4 mb-2">
-                  <mdb-icon fas
-                            icon="check"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  Two finished projects in Angular 5.x
-                </p>
-                <p class="mx-4 mb-2">
-                  <mdb-icon fas
-                            icon="check"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  Gave unit testing training to employees
-                </p>
-                <p class="mx-4 mb-4">
-                  <mdb-icon fas
-                            icon="check"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  Functional tester for six months
-                </p>
-              </div>
-            </li>
-            <li>
-              <!--Section Title -->
-              <a href="#!">
-                <span class="circle z-depth-1-half">
-                  <img src="assets/accenture.png"
-                       class="rounded-circle img-fluid profile">
-                </span>
-              </a>
-              <!-- Section Description -->
-              <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
-                <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">
-                  World Software Services - Java Developer</h4>
-                <p class="text-muted mt-4 px-4">
-                  <mdb-icon far
-                            icon="calendar"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  December 2016 - May 2017
-                </p>
-                <p class="mx-4 mb-2">
-                  <mdb-icon fas
-                            icon="check"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  Project with AngularJS and Java Spring
-                </p>
-                <p class="mx-4 mb-4">
-                  <mdb-icon fas
-                            icon="check"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  Project with Java Struts
-                </p>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <!--Section Title -->
-              <a href="#!">
-                <span class="circle z-depth-1-half">
-                  <img src="assets/accenture.png"
-                       class="rounded-circle img-fluid profile">
-                </span>
-              </a>
-              <!-- Section Description -->
-              <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
-                <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">
-                  Brandpetram - Frontend Intern</h4>
-                <p class="text-muted mt-4 px-4">
-                  <mdb-icon far
-                            icon="calendar"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  June 2015 - March 2016
-                </p>
-                <p class="mx-4 mb-4">
-                  <mdb-icon fas
-                            icon="check"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  Landing pages with SASS and JQuery
-                </p>
-              </div>
-            </li>
-          </ul>
-          <!-- Timeline Wrapper -->
+                </div>
+              </li>
+              <li>
+                <!--Section Title -->
+                <a href="#!">
+                  <span class="circle z-depth-1-half">
+                    <img src="assets/accenture.png"
+                         class="rounded-circle img-fluid profile">
+                  </span>
+                </a>
+                <!-- Section Description -->
+                <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
+                  <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">
+                    World Software Services - Java Developer</h4>
+                  <p class="text-muted mt-4 px-4">
+                    <mdb-icon far
+                              icon="calendar"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    December 2016 - May 2017
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="check"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    Project with AngularJS and Java Spring
+                  </p>
+                  <p class="mx-4 mb-4">
+                    <mdb-icon fas
+                              icon="check"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    Project with Java Struts
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <!--Section Title -->
+                <a href="#!">
+                  <span class="circle z-depth-1-half">
+                    <img src="assets/accenture.png"
+                         class="rounded-circle img-fluid profile">
+                  </span>
+                </a>
+                <!-- Section Description -->
+                <div class="step-content z-depth-1 ml-xl-0 p-0 mt-2">
+                  <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">
+                    Brandpetram - Frontend Intern</h4>
+                  <p class="text-muted mt-4 px-4">
+                    <mdb-icon far
+                              icon="calendar"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    June 2015 - March 2016
+                  </p>
+                  <p class="mx-4 mb-4">
+                    <mdb-icon fas
+                              icon="check"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    Landing pages with SASS and JQuery
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <!-- Timeline Wrapper -->
+          </div>
         </div>
       </div>
     </div>
     <!-- Timeline -->
 
-    <div class="row mt-5">
-      <div class="col">
-        <h2><strong>Education</strong></h2>
+    <!--Section: Features v.2-->
+    <div class="row text-left blue-gradient text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!--Section heading-->
+            <h2 class="mb-3"><strong>Skills</strong></h2>
+
+            <!--Grid row-->
+            <div class="row text-left">
+
+              <!--Grid column-->
+              <div class="col-md-4 mb-4">
+                <div class="colfloat-right">
+                  <h4 class="font-weight-bold mb-3">Advanced</h4>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fab
+                              icon="angular"
+                              class="mr-1">
+                    </mdb-icon>
+                    Angular
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="code"
+                              class="mr-1">
+                    </mdb-icon>
+                    Jest
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fab
+                              icon="node-js"
+                              class="mr-1">
+                    </mdb-icon>
+                    NodeJS
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="code"
+                              class="mr-1">
+                    </mdb-icon>
+                    NestJS
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fab
+                              icon="microsoft"
+                              class="mr-1">
+                    </mdb-icon>
+                    Typescript / Javascript
+                  </p>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <div class="col-md-4 mb-4">
+                <div class="colfloat-right">
+                  <h4 class="font-weight-bold mb-3">Intermediate</h4>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fab
+                              icon="aws"
+                              class="mr-1">
+                    </mdb-icon>
+                    AWS
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="code"
+                              class="mr-1">
+                    </mdb-icon>
+                    CI/CD
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fab
+                              icon="docker"
+                              class="mr-1">
+                    </mdb-icon>
+                    Docker
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="code"
+                              class="mr-1">
+                    </mdb-icon>
+                    ExpressJS
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="code"
+                              class="mr-1">
+                    </mdb-icon>
+                    Ionic
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="database"
+                              class="mr-1">
+                    </mdb-icon>
+                    MongoDB
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="database"
+                              class="mr-1">
+                    </mdb-icon>
+                    PostgreSQL
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-4">
+                <div class="colfloat-right">
+                  <h4 class="font-weight-bold mb-3">Novice</h4>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fab
+                              icon="microsoft"
+                              class="mr-1">
+                    </mdb-icon>
+                    C#
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fab
+                              icon="java"
+                              class="mr-1">
+                    </mdb-icon>
+                    Java
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="code"
+                              class="mr-1">
+                    </mdb-icon>
+                    Polymer
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fab
+                              icon="php"
+                              class="mr-1">
+                    </mdb-icon>
+                    PHP
+                  </p>
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="code"
+                              class="mr-1">
+                    </mdb-icon>
+                    Ruby on Rails
+                  </p>
+                </div>
+              </div>
+
+            </div>
+            <!--Grid row-->
+          </div>
+        </div>
       </div>
     </div>
-    <div class="row mt-3">
-      <div class="col">
-        <div class="timeline-main">
-          <!-- Timeline Wrapper -->
-          <ul class="stepper stepper-vertical timeline mx-0">
-            <li>
-              <!--Section Title -->
-              <a href="#!">
-                <span class="circle z-depth-1-half">
-                  <img src="assets/if.png"
-                       class="rounded-circle img-fluid profile">
-                </span>
-              </a>
-              <!-- Section Description -->
-              <div class="step-content z-depth-1 ml-xl-0 p-0 my-2">
-                <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">
-                  Universidad de Monterrey - Software Engineer Career
-                </h4>
-                <p class="text-muted mt-4 px-4">
-                  <mdb-icon far
-                            icon="calendar"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  August 2013 - May 2018
-                </p>
-                <p class="mx-4 mb-2">
-                  <mdb-icon fas
-                            icon="check"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  Developed a human resource management system with MEAN stack
-                </p>
-                <p class="mx-4 mb-2">
-                  <mdb-icon fas
-                            icon="check"
-                            aria-hidden="true"
-                            class="mr-1">
-                  </mdb-icon>
-                  Member of ISACA student group
-                  <p class="mx-4 mb-4">
+    <!--Section: Features v.2-->
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <h2><strong>Education</strong></h2>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">
+          <div class="timeline-main">
+            <!-- Timeline Wrapper -->
+            <ul class="stepper stepper-vertical timeline mx-0">
+              <li>
+                <!--Section Title -->
+                <a href="#!">
+                  <span class="circle z-depth-1-half">
+                    <img src="assets/if.png"
+                         class="rounded-circle img-fluid profile">
+                  </span>
+                </a>
+                <!-- Section Description -->
+                <div class="step-content z-depth-1 ml-xl-0 p-0 my-2">
+                  <h4 class="font-weight-bold timeline-header blue-gradient white-text p-3">
+                    Universidad de Monterrey - Software Engineer Career
+                  </h4>
+                  <p class="text-muted mt-4 px-4">
+                    <mdb-icon far
+                              icon="calendar"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    August 2013 - May 2018
+                  </p>
+                  <p class="mx-4 mb-2">
                     <mdb-icon fas
                               icon="check"
                               aria-hidden="true"
                               class="mr-1">
                     </mdb-icon>
-                    Player at volleyball representative team
+                    Developed a human resource management system with MEAN stack
                   </p>
-              </div>
-            </li>
-          </ul>
-          <!-- Timeline Wrapper -->
+                  <p class="mx-4 mb-2">
+                    <mdb-icon fas
+                              icon="check"
+                              aria-hidden="true"
+                              class="mr-1">
+                    </mdb-icon>
+                    Member of ISACA student group
+                    <p class="mx-4 mb-4">
+                      <mdb-icon fas
+                                icon="check"
+                                aria-hidden="true"
+                                class="mr-1">
+                      </mdb-icon>
+                      Player at volleyball representative team
+                    </p>
+                </div>
+              </li>
+            </ul>
+            <!-- Timeline Wrapper -->
+          </div>
         </div>
       </div>
+      <!-- Timeline -->
     </div>
-    <!-- Timeline -->
   </div>
 </main>
