@@ -1,20 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
-/* Required for full background image */
+@import '~ng-uikit-pro-standard/assets/scss/core/colors';
+@import '~ng-uikit-pro-standard/assets/scss/core/variables';
+@import '~ng-uikit-pro-standard/assets/scss/core/variables-pro';
+
+@import '~ng-uikit-pro-standard/assets/scss/addons-pro/_timelines-pro.scss';
+@import '~ng-uikit-pro-standard/assets/scss/addons-pro/_timeline-pro.scss';
 
 html,
 body,
 header,
 .view {
   min-height: 95vh !important;
-}
-
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .view {
-    height: 100vh;
-  }
 }
 
 h1 {
@@ -28,4 +23,21 @@ h5 {
 .hr-light {
   border-top: 3px solid #fff;
   width: 80px;
+}
+
+.timeline-main .stepper.stepper-vertical.timeline li .step-content:after {
+  border-left-color: #303f9f !important;
+  border-right-color: #303f9f !important;
+}
+
+.timeline-main .stepper.stepper-vertical.timeline li.timeline-inverted .step-content:after {
+  border-left-color: #45cafc !important;
+  border-right-color: #45cafc !important;
+}
+
+@media (max-width: 1025px) {
+  .timeline-main .stepper.stepper-vertical.timeline li .step-content:after {
+    border-left-color: #45cafc !important;
+    border-right-color: #45cafc !important;
+  }
 }
