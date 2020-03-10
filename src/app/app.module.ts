@@ -1,14 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import {
+  ButtonsModule,
+  IconsModule,
+  NavbarModule,
+  ScrollSpyModule,
+  WavesModule,
+  SmoothscrollModule,
+  PageScrollService
+} from 'ng-uikit-pro-standard';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarModule, WavesModule, ButtonsModule, IconsModule } from 'ng-uikit-pro-standard';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, NavbarModule, WavesModule, ButtonsModule, IconsModule],
-  providers: [],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NavbarModule,
+    WavesModule,
+    ButtonsModule,
+    IconsModule,
+    ScrollSpyModule,
+    SmoothscrollModule
+  ],
+  providers: [PageScrollService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

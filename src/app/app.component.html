@@ -3,38 +3,64 @@
   <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color blue-gradient fixed-top">
     <!-- Navbar brand -->
     <mdb-navbar-brand><a class="navbar-brand"
-         href="#">Víctor Martínez</a></mdb-navbar-brand>
+         mdbPageScroll
+         [pageScrollDuration]="pageScrollDuration"
+         href="#home">Víctor Martínez</a></mdb-navbar-brand>
     <!-- Collapsible content -->
     <links>
       <!-- Links -->
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link waves-light"
-             mdbWavesEffect>About</a>
+             mdbWavesEffect
+             mdbPageScroll
+             [pageScrollDuration]="pageScrollDuration"
+             pageScrollOffset="100"
+             href="#experience">Experience</a>
         </li>
         <li class="nav-item">
           <a class="nav-link waves-light"
-             mdbWavesEffect>Experience</a>
+             mdbWavesEffect
+             mdbPageScroll
+             [pageScrollDuration]="pageScrollDuration"
+             pageScrollOffset="75"
+             href="#skills">Skills</a>
         </li>
         <li class="nav-item">
           <a class="nav-link waves-light"
-             mdbWavesEffect>Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link waves-light"
-             mdbWavesEffect>Skills</a>
+             mdbWavesEffect
+             mdbPageScroll
+             [pageScrollDuration]="pageScrollDuration"
+             href="#education">Education</a>
         </li>
       </ul>
       <!-- Links -->
-      <ul class="navbar-nav ml-auto nav-flex-icons">
+      <ul class="navbar-nav ml-auto nav-flex-icons d-flex justify-content-center align-items-center">
         <li class="nav-item">
-          <a class="nav-link">
+          <a mdbBtn
+             gradient="aqua"
+             rounded="true"
+             mdbWavesEffect
+             class="pdf-button"
+             href="/assets/resume.pdf"
+             download>
+            <mdb-icon far
+                      icon="file-pdf"></mdb-icon>
+            Download PDF
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"
+             href="https://www.linkedin.com/in/v%C3%ADctor-andr%C3%A9s-mart%C3%ADnez-vald%C3%A9s-793600104/"
+             target="_blank">
             <mdb-icon fab
                       icon="linkedin"></mdb-icon>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">
+          <a class="nav-link"
+             href="https://github.com/vmartinez56"
+             target="_blank">
             <mdb-icon fab
                       icon="github"></mdb-icon>
           </a>
@@ -47,7 +73,8 @@
 
   <!-- Full Page Intro -->
   <div class="view jarallax"
-       style="background-image: url('assets/code.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+       style="background-image: url('assets/code.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;"
+       id="home">
     <!-- Mask & flexbox options-->
     <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
       <!-- Content -->
@@ -87,7 +114,8 @@
 <main>
   <div class="container-fluid">
     <!-- Timeline -->
-    <div class="container my-5">
+    <div class="container my-5"
+         id="experience">
       <div class="row">
         <div class="col">
           <h2><strong>Experience</strong></h2>
@@ -266,7 +294,9 @@
     <!-- Timeline -->
 
     <!--Section: Features v.2-->
-    <div class="row text-left blue-gradient text-white py-5 my-5">
+    <section class="row text-left blue-gradient text-white py-5 my-5"
+             mdbScrollSpyElement="mainScrollSpy"
+             id="skills">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -420,10 +450,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--Section: Features v.2-->
 
-    <div class="container my-5">
+    <div class="container my-5"
+         mdbScrollSpyElement="mainScrollSpy"
+         id="education">
       <div class="row mt-5">
         <div class="col">
           <h2><strong>Education</strong></h2>
